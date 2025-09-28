@@ -1,0 +1,258 @@
+/* General Body */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('images/5740648.jpg');
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.all{
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 0;
+}
+
+/* Navbar */
+
+/* Logo */
+.logo-img {
+  height: 100px;     /* increased size */
+  padding: 0 12px 0 20px; /* space between logo and text */
+}
+
+header {
+  background: #2a9d8f;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header a span {
+  color: #fff !important;
+}
+
+.nav-pills .nav-link {
+  color: #fff;
+  font-weight: 500;
+  margin: 0 4px;
+  transition: background 0.3s ease;
+}
+
+.nav-pills .nav-link.active {
+  background: #e9c46a;
+  color: #000;
+}
+
+.dropdown-menu  {
+  background: #e9c46a;
+  border-radius: 8px; 
+}
+
+.dropdown-submenu {
+  background: #e9c46a;
+  border-radius: 8px;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background: #2a9d8f;
+  border-radius: 8px; 
+}
+
+.dropdown-submenu .dropdown-item:hover {
+  background: #2a9d8f;
+  border-radius: 8px; 
+}
+
+/* Nested dropdown (Staffs) positioning */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  display: none;          /* hide by default */
+  position: absolute;
+  top: 0;
+  left: 100%;             /* show to the right of parent */
+  margin-top: -1px;
+  border-radius: 8px;
+}
+
+/* Show the nested dropdown on hover */
+.dropdown-submenu:hover .dropdown-menu {
+  display: block;         /* show on hover */
+}
+
+/* Carousel */
+.carousel img {
+  height: 500px;
+  object-fit: cover;
+
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
+
+/* Featurettes */
+.featurette-heading {
+  font-size: 2rem;
+  color: #264653;
+}
+
+.featurette p {
+  color: #555;
+}
+
+.featurette img {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+/* Jumbotron */
+.bg-body-tertiary {
+  background: linear-gradient(135deg, #f4a261, #e76f51);
+  color: white;
+  border-radius: 16px;
+}
+
+.bg-body-tertiary h1 {
+  font-weight: bold;
+}
+
+.bg-body-tertiary p {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+hr.featurette-divider {
+  visibility: hidden;
+}
+
+/* Footer */
+footer {
+  background: #264653;
+  color: #fff;
+  margin-top: auto;
+  border-radius: 12px 12px 0 0; /* ✅ Rounded top corners */
+    padding: 40px 40px 0 40px ;
+}
+
+footer h5 {
+  color: #e9c46a;
+}
+
+footer a {
+  color: #f1faee;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #e9c46a;
+}
+
+footer p {
+  color: #ddd;
+}
+
+footer .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+footer form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form input[type="email"] {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Gold Subscribe Button */
+.btn-gold {
+  background-color: #d4af37; /* Gold */
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-gold:hover {
+  background-color: #bfa22e;
+  color: #fff;
+}
+
+.btn-gold:focus,
+.btn-gold:active,
+.btn-gold:focus-visible {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.btn-outline-gold {
+  color: #d4af37;              /* Gold text */
+  border: 2px solid #d4af37;   /* Gold border */
+  background-color: transparent;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.btn-outline-gold:hover,
+.btn-outline-gold:focus {
+  background-color: #d4af37;   /* Gold background on hover */
+  color: #fff;                 /* White text */
+  border-color: #d4af37;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+}
+
+
+/* Newsletter input styling */
+#newsletter1 {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#newsletter1:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 5px rgba(212, 175, 55, 0.6);
+  outline: none;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  background: #d4af37; /* Gold strip */
+  color: #000;
+  border-radius: 0;
+  margin-top: 20px;
+  margin: 0;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+  object-fit: cover;
+}
+
+.feature-list li {
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .carousel img {
+    height: 300px;
+  }
+  .featurette-heading {
+    font-size: 1.5rem;
+  }
+}
