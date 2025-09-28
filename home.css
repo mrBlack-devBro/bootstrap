@@ -247,8 +247,75 @@ form input[type="email"] {
   margin-bottom: 10px;
 }
 
+/* Customize toggler */
+.navbar-toggler {
+  border: none;
+  background: transparent;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
 /* Responsive */
-@media (max-width: 768px) {
+/* 📱 Small screens (phones, portrait, <576px) */
+/* 📱 Small screens (phones, portrait, <576px) */
+@media (max-width: 575.98px) {
+  body {
+    font-size: 0.85rem;
+  }
+
+  /* Navbar adjustments */
+  header {
+    border-radius: 0; /* remove rounded corners for full width */
+  }
+
+  .logo-img {
+    height: 60px;
+    padding: 0 8px;
+  }
+
+  .container-fluid a{
+    padding: 4px;
+  }
+
+  .nav-pills {
+    flex-direction: column;   /* stack links */
+    align-items: center;      /* center them */
+  }
+
+  .nav-pills .nav-link {
+    margin: 4px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Dropdown menus full-width */
+  .dropdown-menu {
+    position: static;   /* stack instead of floating */
+    width: 100%;
+    text-align: center;
+  }
+
+  .carousel img {
+    height: 220px;
+  }
+
+  .featurette-heading {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  footer .row {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+/* 📲 Medium screens (tablets, <768px) */
+@media (max-width: 767.98px) {
   .carousel img {
     height: 300px;
   }
@@ -257,5 +324,25 @@ form input[type="email"] {
   }
   p {
     font-size: 0.9rem;
+  }
+}
+
+/* 💻 Large screens (desktops, >1200px) */
+@media (min-width: 1200px) {
+  body {
+    font-size: 1.1rem;
+  }
+
+  .all {
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  .featurette-heading {
+    font-size: 2.5rem;
+  }
+
+  .carousel img {
+    height: 600px;
   }
 }

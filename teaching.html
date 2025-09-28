@@ -11,73 +11,88 @@
 <body class="d-flex min-vh-100 flex-column">
   <div class="container flex-grow-1 all">
     <!-- Navbar -->
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom px-0">
-      <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 me-md-auto text-decoration-none">
-        <img src="images/logo.png" alt="The Fountain Academy Logo" width="40" height="40" class="me-2">
-        <span class="fs-4 ms-2 fw-bold text-dark">T.F.A</span>
-      </a>
-      <ul class="nav nav-pills">
-        <!-- Home -->
-        <li class="nav-item">
-          <a href="index.html" class="nav-link" aria-current="page">Home</a>
-        </li>
+    <header class="navbar navbar-expand-lg py-3 mb-4 border-bottom px-3">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+          <img src="images/logo.png" alt="The Fountain Academy Logo" width="40" height="40" class="me-2">
+          <span class="fs-4 ms-2 fw-bold text-dark">T.F.A</span>
+        </a>
 
-        <!-- Our School Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Our School
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="about.html">About Us</a></li>
-            <li><a class="dropdown-item" href="vision.html">Vision & Mission</a></li>
-            <li class="dropdown-submenu">
-              <a class="dropdown-item dropdown-toggle" href="#">Staffs</a>
+        <!-- Hamburger Toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible Menu -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto nav-pills">
+            <!-- Home -->
+            <li class="nav-item">
+              <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+            </li>
+
+            <!-- Our School Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Our School
+              </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="teaching.html">Teaching Staff</a></li>
-                <li><a class="dropdown-item" href="non-teaching.html">Non-teaching Staff</a></li>
-                <li><a class="dropdown-item" href="management.html">Management</a></li>
-                <li><a class="dropdown-item" href="founder.html">Founder</a></li>
+                <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                <li><a class="dropdown-item" href="vision.html">Vision & Mission</a></li>
+
+                <!-- Staffs with nested dropdown -->
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Staffs</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="teaching.html">Teaching Staff</a></li>
+                    <li><a class="dropdown-item" href="non-teaching.html">Non-teaching Staff</a></li>
+                    <li><a class="dropdown-item" href="management.html">Management</a></li>
+                    <li><a class="dropdown-item" href="founder.html">Founder</a></li>
+                  </ul>
+                </li>
               </ul>
             </li>
+
+            <!-- Programs Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Programs
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="creche.html">Creche</a></li>
+                <li><a class="dropdown-item" href="pre-school.html">Pre-school</a></li>
+                <li><a class="dropdown-item" href="nursery.html">Nursery</a></li>
+                <li><a class="dropdown-item" href="kindergarten.html">Kindergarten</a></li>
+                <li><a class="dropdown-item" href="primary.html">Primary</a></li>
+              </ul>
+            </li>
+
+            <!-- Admission Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Admission
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="admission.html">Admission Process</a></li>
+                <li><a class="dropdown-item" href="requirements.html">Requirements</a></li>
+                <li><a class="dropdown-item" href="apply-now.html">Apply Now</a></li>
+              </ul>
+            </li>
+
+            <!-- Contact -->
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+
+            <!-- Portal -->
+            <li class="nav-item">
+              <a href="login.html" class="nav-link">Portal</a>
+            </li>
           </ul>
-        </li>
-
-        <!-- Programs Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Programs
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="creche.html">Creche</a></li>
-            <li><a class="dropdown-item" href="pre-school.html">Pre-school</a></li>
-            <li><a class="dropdown-item" href="nursery.html">Nursery</a></li>
-            <li><a class="dropdown-item" href="kindergarten.html">Kindergarten</a></li>
-            <li><a class="dropdown-item" href="primary.html">Primary</a></li>
-          </ul>
-        </li>
-
-        <!-- Admission Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Admission
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="admission.html">Admission Process</a></li>
-            <li><a class="dropdown-item" href="requirements.html">Requirements</a></li>
-            <li><a class="dropdown-item" href="apply-now.html">Apply Now</a></li>
-          </ul>
-        </li>
-
-        <!-- Contact -->
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link">Contact</a>
-        </li>
-
-        <!-- Welcome/Login -->
-        <li class="nav-item">
-          <a href="login.html" class="nav-link">Portal</a>
-        </li>
-      </ul>
+        </div>
+      </div>
     </header>
 
     <!-- Main Content -->
