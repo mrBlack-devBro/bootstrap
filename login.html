@@ -3,34 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page</title>
-  <!-- Link to external CSS -->
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
   <link rel="stylesheet" href="login.css">
 </head>
 <body>
-  <div class="container">
+  <form class="form">
     <h2>Login</h2>
+      <label>
+        <input type="text" required>
+        <span>Username</span>
+        <span class="icon">
+          <i class="fa-solid fa-user"></i>
+        </span>
+      </label>
+      <div class="error-message">Please enter a valid username</div>
 
-
-    <div class="input-group">
-      <label>Username</label>
-      <input type="text" placeholder="John Doe">
+      <label>
+        <input type="password" id="password" required>
+        <span>Password</span>
+        <span id="toggle-password" class="icon">
+          <i class="fa-solid fa-eye-slash"></i>
+        </span>
+      </label>
+      <div class="error-message">Enter a correct Password</div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="role" checked>
+        Admin
+      </label>
+      <label>
+        <input type="radio" name="role" checked>
+        Teacher
+      </label>
+      <label>
+        <input type="radio" name="role" checked>
+        Pupil
+      </label>
+    </div>
+    <button class="btn btn-gold" id="login-btn">
+      <span class="btn-text">Login</span>
+    </button>
+    <div class="check">
+      <label>
+        <input type="checkbox">
+        Remember Me
+      </label>
     </div>
 
-    <div class="input-group">
-      <label>Password</label>
-      <input type="password" placeholder="********">
-    </div>
+  </form>
 
-    <div class="role">
-      <label><input type="radio" name="role" checked> Student</label>
-      <label><input type="radio" name="role"> Teacher</label>
-      <label><input type="radio" name="role"> Admin</label>
-    </div>
-
-    <a href="#" class="forgot">Forgot Password?</a>
-
-    <button class="btn">Login</button>
-  </div>
+  <script src="login.js"></script>
 </body>
 </html>
